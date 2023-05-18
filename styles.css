@@ -1,104 +1,117 @@
 :root {
---container-width: 90vw;
---container-height: 45vw;
---color-container-border: 5px solid black;
---container-border-radius: 5px;
+    --container-width: 90vw;
+    --container-height: 45vw;
+    --color-container-border: 5px solid black;
+    --container-border-radius: 5px;
 }
 
 .container {
-border: var(--color-container-border);
-border-radius: var(--container-border-radius);
-width: var(--container-width);
-height: var(--container-height);
-display: grid;
-grid-template-columns: 1fr 4fr 1fr;
-margin: auto;
+/* border: var(--color-container-border); */
+    /* border-radius: var(--container-border-radius); */
+    width: var(--container-width);
+    height: var(--container-height);
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    margin: auto;
 }
 
 .leftSide {
-background-color: rgb(170, 0, 0);
+    background-color: rgb(170, 0, 0);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    outline: 3px solid black;
+    border-radius: 2px;
 }
 
 .leftGrids1 {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20%;
+}
 
+#powerLabel {
+    color: rgb(146, 146, 147);
+    display: flex;
+    justify-content: center;
+    font-size: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
 }
 
 #powerLight {
-
+    background-color: rgb(112, 255, 87);
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(170, 252, 28);
 }
 
 .leftGrids2 {
-
+    /* display: grid; */
+    /* grid-template-rows: 1fr 1fr 1fr; */
 }
 
 .arrows {
-/* color: aliceblue; */
-margin: auto;
-display: grid;
-align-items: center;
-justify-content: center;
-color: wheat;
+    margin: auto;
+    /* display: grid; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* color: wheat; */
 }
 
 #arrowUp {
-    /* color: aliceblue; */
-/*   
-    background-color: rgb(0, 3, 2);
-    height: 20px;
-    width: 50px; */
-    color: blue;
+    background-color: black;
+    width: 30%;
+    height: 30%;
+    /* box-shadow: 0px 0px 1px 1px rgba(255, 153, 153, 0.247); */
+}
 
+#arrowLeftRight {
+    background-color: black;
+    width: 90%;
+    height: 30%;
+    /* box-shadow: 0px 0px 1px 1px rgba(255, 153, 153, 0.247); */
 
 }
 
 #arrowDown {
-
+    background-color: black;
+    width: 30%;
+    height: 30%;
+    /* box-shadow: 0px 0px 1px 1px rgba(255, 153, 153, 0.247); */
 }
 
-#arrowLeft {
+.leftGrids3 {}
 
-}
-
-#arrowRight {
-
-}
-
-.leftGrids3 {
-
-}
-
-#label {
-        
-}
 
 .display {
-outline: 5px solid black;
-border-radius: 2px;
-position:relative;
+    outline: 3px solid black;
+    /* border-radius: 2px; */
+    /* position:relative; */
 }
+
 .display video {
-position:absolute;
-width: 100%;
-height: 100%;
-object-fit:fill;
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
 }
 
 .rightSide {
-background-color: rgb(0, 0, 170);
-display: grid;
-grid-template-rows: 1fr 1fr 1fr;
+    background-color: rgb(0, 0, 170);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    outline: 3px solid black;
+    border-radius: 2px;
+
 }
 
 .rightGrids1 {
-/* background-color: yellow;
-border: 2px solid orangered; */
-margin: auto;
+    /* background-color: yellow;
+    border: 2px solid orangered; */
+    margin: auto;
 
 }
 
-.principalButtons {
-
-}
+.principalButtons {}
 
 #startButton,
 #pauseButton {
@@ -107,76 +120,69 @@ margin: auto;
     width: 30px;
     height: 10px;
     margin: auto;
-    box-shadow: 0px 0px 1px 1px rgba(120, 115, 249, 0.508);
+    box-shadow: 0px 0px 1px 1px rgba(125, 121, 255, 0.508);
 
 
 }
 
 #labelButtons {
-color: rgb(146, 146, 147);
-display: flex;
-justify-content: center;
-font-size: 10px;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    color: rgb(146, 146, 147);
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-.rightGrids2 {
-
-}
+.rightGrids2 {}
 
 #touchPad {
-background-color: rgba(9, 15, 55, 0.23);
-border-radius:10px;
-width: 80%;
-height: 80%;
-margin: auto;
-box-shadow: 0px 0px 1px 1px rgba(119, 115, 249, 0.17);
+    background-color: rgba(9, 15, 55, 0.23);
+    border-radius:10px;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    box-shadow: 0px 0px 1px 1px rgba(119, 115, 249, 0.17);
 }
 
 .rightGrids3 {
-color:white;
-/* background-color: black; */
-/* border: 1px solid white; */
-display: grid;
-grid-template: 4fr 1fr 4fr / 4fr 1fr 4fr;
-margin: 12px 12px 12px 12px;
+    /* color:white; */
+    /* background-color: black; */
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template: 4fr 1fr 4fr / 4fr 1fr 4fr;
+    margin: 12px 12px 12px 12px;
 }
 
 .buttons {
-display: flex;
-justify-content: center;
-align-items: center;
-/* margin: ; */
-/* HACE UNA CRUZ EN MEDIO DE LOS BOTONES
-background-color: black; */
-}
-
-#buttonY,
-#buttonX,
-#buttonB,
-#buttonA {
-background-color: rgb(5, 0, 0);
-border-radius: 50px;
-box-shadow: 0px 0px 2px 1px rgba(120, 115, 249, 0.508);
-font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    /* margin: ; */
+    /* HACE UNA CRUZ EN MEDIO DE LOS BOTONES
+    background-color: black; */
 }
 
 #buttonY {
-color: rgba(46, 215, 20, 0.76);
+    background-color: rgb(70, 206, 70);
+    box-shadow: 0px 0px 3px 1.5px rgba(130, 255, 130, 0.676);
+
 }
 
 #buttonX {
-color: rgb(22, 16, 217);
+    background-color: rgb(39, 32, 255);
+    box-shadow: 0px 0px 3px 1.5px rgba(68, 77, 180, 0.644);
+
 }
 
 #buttonB {
-color: rgba(203, 220, 20, 0.923);
+    background-color: rgb(232, 248, 51);
+    box-shadow: 0px 0px 3px 1.5px rgba(217, 226, 46, 0.842);
+
 }
 
 #buttonA {
-color: crimson;
+    background-color: crimson;
+    box-shadow: 0px 0px 3px 1.5px #c83b3bd7;
 }
-
-
